@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Wpf_Lec2
+namespace DPGI_Lec2
 {
     /// <summary>
     /// Логика взаимодействия для App.xaml

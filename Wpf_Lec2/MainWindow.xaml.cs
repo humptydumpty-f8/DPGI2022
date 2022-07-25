@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Wpf_Lec2
+namespace DPGI_Lec2
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -23,6 +23,13 @@ namespace Wpf_Lec2
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        //Обробник події завантаження.
+        //Виводить діалог з розмірами вікна (px).
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(String.Format("Window sizes: \n {0}x{1}", this.ActualHeight, this.ActualWidth));
         }
     }
 }

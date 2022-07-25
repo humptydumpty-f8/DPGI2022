@@ -1,11 +1,11 @@
-﻿<Window x:Class="Wpf_Lec2.MainWindow"
+﻿<Window x:Class="DPGI_Lec2.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Wpf_Lec2"
+        xmlns:local="clr-namespace:DPGI_Lec2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Lection #2" Height="350" Width="600" Loaded="Window_Loaded">
     <Grid>
         
     </Grid>

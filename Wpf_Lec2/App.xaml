@@ -1,7 +1,7 @@
-﻿<Application x:Class="Wpf_Lec2.App"
+﻿<Application x:Class="DPGI_Lec2.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Wpf_Lec2"
+             xmlns:local="clr-namespace:DPGI_Lec2"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
