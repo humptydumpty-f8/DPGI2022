@@ -31,5 +31,12 @@ namespace DPGI_Lec2
         {
             MessageBox.Show(String.Format("Window sizes: \n {0}x{1}", this.ActualHeight, this.ActualWidth));
         }
+
+        //Обробник події кліку по кнопці.
+        //Виводить діалог з повідомленням про клік.
+        private void btnClickMe_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Button was clicked");
+        }
     }
 }
