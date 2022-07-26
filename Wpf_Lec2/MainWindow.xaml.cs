@@ -23,15 +23,28 @@ namespace DPGI_Lec2
         public MainWindow()
         {
             InitializeComponent();
-        }
 
-        //Обробник події завантаження.
-        //Виводить діалог з розмірами вікна (px).
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show(String.Format("Window sizes: \n {0}x{1}", this.ActualHeight, this.ActualWidth));
-        }
+            // Нова форма
+            this.Width = 600;
+            this.Height = 350;
+            this.Title = "Lection #2";
 
+            // Крмпоновка
+            Button btnClickMe = new Button();
+            btnClickMe.Content = "Click me";
+            btnClickMe.Height = 30;
+            btnClickMe.Width = 75;
+            btnClickMe.HorizontalAlignment = HorizontalAlignment.Left;
+            btnClickMe.VerticalAlignment = VerticalAlignment.Top;
+
+            Grid grid = new Grid();           
+            grid.Children.Add(btnClickMe);
+            this.Content = grid;
+
+            // Обробник
+            btnClickMe.Click += btnClickMe_Click;            
+        }
+        
         //Обробник події кліку по кнопці.
         //Виводить діалог з повідомленням про клік.
         private void btnClickMe_Click(object sender, RoutedEventArgs e)

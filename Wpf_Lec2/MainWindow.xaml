@@ -5,10 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DPGI_Lec2"
         mc:Ignorable="d"
-        Title="Lection #2" Height="350" Width="600" Loaded="Window_Loaded">
+        >
     <Grid>
-        <Button Content="Click me!" Name="btnClickMe" Click="btnClickMe_Click" 
-                HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
-
+        
     </Grid>
 </Window>
