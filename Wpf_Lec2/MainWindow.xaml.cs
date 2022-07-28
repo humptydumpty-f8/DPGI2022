@@ -26,10 +26,12 @@ namespace DPGI_Lec2
 }
         
         //Обробник події кліку по кнопці.
-        //Виводить діалог з повідомленням про клік.
-        private void btnClickMe_Click(object sender, RoutedEventArgs e)
+        //Задаються нові розміри форми.
+        
+        private void btnOk_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Button was clicked");
+            this.Height = int.Parse(txtHeigt.Text);
+            this.Width = int.Parse(txtWidth.Text);
         }
     }
 }
