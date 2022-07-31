@@ -23,15 +23,7 @@ namespace DPGI_Lec2
         public MainWindow()
         {
             InitializeComponent();
-}
-        
-        //Обробник події кліку по кнопці.
-        //Задаються нові розміри форми.
-        
-        private void btnOk_Click(object sender, RoutedEventArgs e)
-        {
-            this.Height = int.Parse(txtHeigt.Text);
-            this.Width = int.Parse(txtWidth.Text);
         }
+               
     }
 }

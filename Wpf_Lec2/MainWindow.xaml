@@ -6,18 +6,14 @@
         xmlns:local="clr-namespace:DPGI_Lec2"
         mc:Ignorable="d"     
         Title="Lection #2" Height="350" Width="600"  >
-    <!--Робимо сітку видимою-->
-    <Grid x:Name="mainGrid" ShowGridLines="True">
-        <!--Задаємо сітку у вигляді трьох рядків-->
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <!--Використовуємо приєднані властивості Grid.Row для розташування елементів в рядках сітки-->
-        <TextBox x:Name="txtHeigt" Text="400" Grid.Row="0" />
-        <!--Використання розширення розмітки для посилання на статичні властивості-->
-        <TextBox x:Name="txtWidth" Text="600" Grid.Row="1" FontWeight="{x:Static SystemFonts.CaptionFontWeight}"/>
-        <Button x:Name="btnOk" Content="Ok" Grid.Row="2" Click="btnOk_Click" Foreground="{x:Static SystemColors.ActiveCaptionBrush}"/>
+    <Grid>
+        <TextBox xml:space="preserve">
+            Spesial symbols in XAML:
+                &gt;, 
+                &lt;,
+                &amp;,
+                &quot;
+       
+        </TextBox>
     </Grid>
 </Window>
