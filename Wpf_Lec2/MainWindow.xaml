@@ -6,14 +6,23 @@
         xmlns:local="clr-namespace:DPGI_Lec2"
         mc:Ignorable="d"     
         Title="Lection #2" Height="350" Width="600"  >
+    <!--В локальному просторі імен DPGI_Lec2 створений клас Person-->
     <Grid>
-        <TextBox xml:space="preserve">
-            Spesial symbols in XAML:
-                &gt;, 
-                &lt;,
-                &amp;,
-                &quot;
-       
-        </TextBox>
+        <!--Додаємо елемент ListBox -->
+        <ListBox x:Name="personList">
+            <TextBox FontWeight="Bold">Person list</TextBox>
+            <!--Додаємо в список три обєкти типу Person-->
+            <ListBoxItem>
+                <local:Person Name="Bender O." Age="33"/>
+            </ListBoxItem>
+            <ListBoxItem>
+                <local:Person Name="Panikovskiy E." Age="53"/>
+            </ListBoxItem>
+            <ListBoxItem>
+                <local:Person Name="Balaganov A." Age="28"/>
+            </ListBoxItem>
+            <Button x:Name="btnOk" Width="100" Click="btnOk_Click">Ok</Button>
+        </ListBox>
+
     </Grid>
 </Window>

@@ -24,6 +24,11 @@ namespace DPGI_Lec2
         {
             InitializeComponent();
         }
-               
+
+        //Обробник події кліку по кнопці
+        private void btnOk_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(personList.SelectedItem.ToString());
+        }
     }
 }
